@@ -64,7 +64,7 @@ user_input = st.text_area("Enter News Here:")
 # --------------------------
 # Live News Fetch
 # --------------------------
-API_KEY = "YOUR_NEWSAPI_KEY"  # Replace with your NewsAPI key
+API_KEY = "02aeba635b80ceb5afeff0b27d518518"  # Replace with your NewsAPI key
 if st.sidebar.button("Fetch Latest News"):
     if news_type == "Global News":
         url = f"https://newsapi.org/v2/top-headlines?language=en&apiKey={API_KEY}"
@@ -112,3 +112,4 @@ if st.sidebar.checkbox("Show Prediction History"):
         st.bar_chart(chart_data)
     except:
         st.info("No history found yet.")
+
